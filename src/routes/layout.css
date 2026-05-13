@@ -1,3 +1,80 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@layer base {
+  :root {
+    /* Color Palette - Stitch "Tactical Monolith" */
+    --color-primary: #8f000d;
+    --color-primary-container: #b22222;
+    --color-on-primary: #ffffff;
+    
+    --color-surface: #f4faff;
+    --color-surface-container-low: #e9f6fd;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-high: #ddeaf2;
+    --color-surface-container-highest: #d7e4ec;
+    --color-surface-dim: #cfdce4;
+    
+    --color-on-surface: #111d23;
+    --color-on-surface-variant: #5a403e;
+    
+    --color-outline-variant: #e2beba;
+    
+    --color-secondary: #4c616c;
+    --color-secondary-container: #cfe6f2;
+    
+    --color-error: #ba1a1a;
+    --color-error-container: #ffdad6;
+    
+    --color-success: #388e3c;
+    --color-warning: #fbc02d;
+
+    /* Typography */
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    
+    /* Spacing & Roundness */
+    --radius-md: 4px;
+    --radius-lg: 8px;
+    --radius-full: 999px;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-family);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Tactical Monolith Utilities */
+.surface-card {
+  background-color: var(--color-surface-container-lowest);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  /* No shadows, using tonal layering against surface-container-low */
+}
+
+.status-indicator {
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.btn-tactical {
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-container));
+  color: var(--color-on-primary);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: opacity 0.2s;
+}
+
+.btn-tactical:hover {
+  opacity: 0.9;
+}
