@@ -18,7 +18,7 @@
       <h2 class="text-3xl font-bold tracking-tight text-[var(--color-on-surface)] uppercase">Lager Bestandslage</h2>
       <p class="text-[var(--color-on-surface-variant)] font-medium">Feuerwehrhaus Pfarrwerfen</p>
     </div>
-    <a href="{base}/stock" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-[var(--radius-md)] font-bold uppercase tracking-wide text-xs shadow-lg">
+    <a href="https://shop.rosenbauer.com" target="_blank" rel="noopener noreferrer" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-[var(--radius-md)] font-bold uppercase tracking-wide text-xs shadow-lg">
       Bestellung Erstellen
     </a>
   </header>
