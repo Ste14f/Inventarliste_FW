@@ -35,4 +35,5 @@ jobs:
         with:
           folder: build
           branch: gh-pages
+          dotfiles: true
 
